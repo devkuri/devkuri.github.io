@@ -1,0 +1,135 @@
+.pro {
+	margin-bottom: 80px;
+}
+
+.right p {
+	color: #e5e7eb;
+	font-size: 22px;
+	font-weight: 550;
+	letter-spacing: 0.3px;
+	line-height: 24px;
+	text-align: center;
+}
+
+
+img {
+	display: block;
+	width: 100%;
+}
+
+.technical {
+	/* color: #f3f4f6;
+	display: flex;
+	line-height: 24px;
+	justify-content: center;
+	max-width: 90%; */
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	/* Khoảng cách giữa các thẻ span */
+	justify-content: center;
+}
+
+.technical span {
+	/* background-color: #a3e635;
+	border-radius: 6px;
+	color: #365314;
+	font-size: 14px;
+	font-weight: 600;
+	padding: 4px 8px;
+	padding-top: 8px;
+	margin: 0px 10px 20px 10px;
+	display: flex;
+	height: 30px; */
+	display: inline-flex;
+	align-items: center;
+	max-width: 200px;
+	/* Giới hạn chiều rộng tối đa */
+	padding: 5px;
+	border-radius: 6px;
+	margin-bottom: 20px;
+	font-size: 15px;
+	align-items: center;
+	vertical-align: middle;
+	font-weight: 600;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.technical .nodejs {
+	background-color: #2ac7932b;
+	color: #00b000;
+}
+
+.technical .expressjs {
+	background-color: #adcbc164;
+	color: #0e8f14;
+}
+
+.technical .jwt {
+	background-color: #140e1524;
+	color: #0d98b7;
+}
+
+.technical .scss {
+	background-color: #006da025;
+	color: #ea00daba;
+}
+
+.technical .mysql {
+	background-color: #00a1dc29;
+	color: #ea8c00ba;
+}
+
+.technical .sql-server {
+	background-color: #2b3d4429;
+	color: #a83232ba;
+}
+
+
+.technical .angular {
+	background-color: #315a651f;
+	color: #ea0000ba;
+}
+
+.technical .springboot {
+	background-color: #08252d2e;
+	color: #000601ba;
+}
+
+.technical .firebase {
+	background-color: #2f464d1f;
+	color: #0040ffba;
+}
+
+.technical .gitcus {
+	background-color: #08252d1c;
+	color: #560076ba;
+}
+
+.technical .vue {
+	background-color: #3137391e;
+	color: #006222ba;
+}
+
+
+.technical span img {
+	width: 20px;
+	height: 20px;
+	margin-right: 3px;
+}
+
+
+/* PC */
+@media (min-width: 64em) {}
+
+
+
+/* Mobile */
+@media (max-width: 46.1875em) {
+	img {
+		display: block;
+		width: 100%;
+	}
+
+
+}
