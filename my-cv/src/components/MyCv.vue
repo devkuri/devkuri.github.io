@@ -1,0 +1,615 @@
+<template>
+  <div class="body">
+    <div id="scroll">
+      <button id="scrollToTopBtn" @click="scrollOnTop()">
+        <svg height="1.2em" class="arrow" viewBox="0 0 512 512">
+          <path
+            d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"
+          ></path>
+        </svg>
+        <p class="text"></p>
+      </button>
+    </div>
+    <div class="content">
+      <header>
+        <div class="logo">
+          <a href="">
+            <span> hi@Davis </span>
+            <span class="target" style="margin-left: -6px">
+              <svg
+                style="margin-bottom: -2.2px"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 320 512"
+                width="1em"
+                height="1em"
+              >
+                <path
+                  fill="currentColor"
+                  d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256L73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"
+                />
+              </svg>
+            </span>
+            <span
+              class="blink"
+              style="
+                margin-left: -10px;
+                padding-top: -10px;
+                animation: blinker 1s none infinite;
+              "
+              >ˍ</span
+            >
+          </a>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="blog.html">Blog</a></li>
+            <li>
+              <a style="cursor: pointer"
+                ><i
+                  @click="changesIcon()"
+                  class="bx bx-sun bx-moon sun-moon"
+                  id="mode"
+                ></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <div class="container">
+        <div class="head item">
+          <div class="left">
+            <div class="bounce_auto">
+              <img
+                src="../assets/images/avt.png"
+                id="avt"
+                alt=""
+                class="bounce"
+              />
+            </div>
+            <h1 id="uname">Tran Huu Dang <span id="subname"></span></h1>
+            <p id="desc">Java Developer</p>
+            <div class="contact">
+              <div class="wrap">
+                <a
+                  href="https://github.com/dangtranhuu/RESUME/blob/main/CV%20Tran%20Huu%20Dang%20-%20TranHuuDang-InternDeveloper.pdf"
+                  target="_blank"
+                  ><button>My Resume</button></a
+                >
+                <!-- <button><i class='bx bx-envelope'></i></button> -->
+                <a target="_blank" href="https://github.com/theanishtar"
+                  ><button><i id="github" class="bx bxl-github"></i></button
+                ></a>
+
+                <!-- <button><i class='bx bxl-twitter'></i></button> -->
+                <!-- <a href="https://www.youtube.com/@froggydev" target="_blank"><button>
+									<img src="images/leetcode-logo.svg" alt="" srcset="">
+								</button></a> -->
+                <a href="https://leetcode.com/tranhuudang" target="_blank">
+                  <button>
+                    <svg
+                      id="leetcode"
+                      viewBox="0 0 24 24"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <title>LeetCode icon</title>
+                        <path
+                          d="M16.102 17.93l-2.697 2.607c-.466.467-1.111.662-1.823.662s-1.357-.195-1.824-.662l-4.332-4.363c-.467-.467-.702-1.15-.702-1.863s.235-1.357.702-1.824l4.319-4.38c.467-.467 1.125-.645 1.837-.645s1.357.195 1.823.662l2.697 2.606c.514.515 1.365.497 1.9-.038.535-.536.553-1.387.039-1.901l-2.609-2.636a5.055 5.055 0 0 0-2.445-1.337l2.467-2.503c.516-.514.498-1.366-.037-1.901-.535-.535-1.387-.552-1.902-.038l-10.1 10.101c-.981.982-1.494 2.337-1.494 3.835 0 1.498.513 2.895 1.494 3.875l4.347 4.361c.981.979 2.337 1.452 3.834 1.452s2.853-.512 3.835-1.494l2.609-2.637c.514-.514.496-1.365-.039-1.9s-1.386-.553-1.899-.039zM20.811 13.01H10.666c-.702 0-1.27.604-1.27 1.346s.568 1.346 1.27 1.346h10.145c.701 0 1.27-.604 1.27-1.346s-.569-1.346-1.27-1.346z"
+                        ></path>
+                      </g>
+                    </svg>
+                  </button>
+                </a>
+
+                <a
+                  href="https://www.hackerrank.com/tranhuudang"
+                  target="_blank"
+                >
+                  <button>
+                    <svg
+                      id="hackerrank"
+                      viewBox="0 0 32 32"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <path
+                          d="M16 0c1.714 0 13 6.516 13.854 8 0.859 1.484 0.859 14.516 0 16s-12.141 8-13.854 8c-1.714 0-13-6.516-13.859-8-0.854-1.484-0.854-14.516 0-16 0.859-1.484 12.146-8 13.859-8zM19.063 9.068c-0.193 0-0.349 0.151-0.349 0.344v5.167h-5.427v-5.37h0.932c0.188 0 0.339-0.151 0.339-0.344 0-0.125-0.068-0.234-0.161-0.292l-2.099-2.010c-0.063-0.089-0.188-0.146-0.302-0.146-0.109 0-0.214 0.057-0.276 0.141l-2.24 2.016c-0.094 0.063-0.161 0.167-0.161 0.292 0 0.188 0.151 0.344 0.344 0.344h0.938l0.010 13.38c0 0.193 0.146 0.344 0.339 0.344h1.99c0.188 0 0.344-0.151 0.344-0.344v-5.339h5.432v5.536h-0.932c-0.193 0-0.344 0.156-0.344 0.344 0 0.125 0.068 0.234 0.161 0.292l2.104 2.016c0.057 0.083 0.188 0.146 0.302 0.146s0.208-0.063 0.276-0.146l2.24-2.016c0.094-0.057 0.161-0.167 0.161-0.292 0-0.188-0.156-0.344-0.344-0.344h-0.938l-0.010-13.375c0-0.198-0.151-0.349-0.339-0.349h-1.99z"
+                        ></path>
+                      </g>
+                    </svg>
+                  </button>
+                </a>
+              </div>
+              <div class="wrap">
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/tranhuudang"
+                  ><button>
+                    <i class="bx bxl-linkedin-square" id="linkedin"></i></button
+                ></a>
+                <a href="https://www.youtube.com/@froggydev" target="_blank"
+                  ><button><i class="bx bxl-youtube" id="youtube"></i></button
+                ></a>
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/dangdeveloper/"
+                  ><button>
+                    <i class="bx bxl-facebook-square" id="facebook"></i></button
+                ></a>
+                <a
+                  href="https://www.tiktok.com/@theanishtar"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><button><i class="bx bxl-tiktok" id="tiktok"></i></button
+                ></a>
+                <a
+                  href="https://www.tiktok.com/@theanishtar"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><button><i class="bx bxl-twitter" id="twitter"></i></button
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="right bounce_auto">
+            <img
+              id="avatar"
+              src="../assets/images/avt.png"
+              alt=""
+              class="bounce"
+            />
+          </div>
+        </div>
+        <div class="about item">
+          <p>Hi, i'm Tran Huu Dang. You can call me Davis.</p>
+          <p>
+            I like technology and other work with computer. I am a developer in
+            the back-end website fields (NodeJS and Spring Boot)
+          </p>
+          <p>
+            In addition, I also have knowledge of technology such as Angular,
+            VueJS, TaiwindCSS, JavaSwing. I understand tools like Git, Postman,
+            Debug, ...
+          </p>
+          <p style="padding-right: 30px">
+            Connect with my Linkedin to discuss about work or my Github to share
+            interesting knowledge ^^
+          </p>
+        </div>
+
+        <div class="experience title">
+          <h1>Experience</h1>
+          <div class="row">
+            <div class="left">
+              <div class="top">
+                Leader Developer team at Factory software FPL Can Tho
+              </div>
+              <div class="bot">
+                Using Angular development the project Lorum learning at my
+                school
+              </div>
+            </div>
+            <div class="right">2021–2023</div>
+          </div>
+
+          <div class="row">
+            <div class="left">
+              <div class="top">
+                Teaching Assistant for students at FPT Polytechnic
+              </div>
+              <div class="bot">
+                The Subject's instructor Java OOP/Swing/Servlet/SpringBoot, SQL
+                Server, AngularJS,...
+              </div>
+            </div>
+            <div class="right">2021–2023</div>
+          </div>
+
+          <!-- <div class="row">
+					<div class="left">
+						Front-End Angular developer at FPT Polytechnic
+					</div>
+					<div class="right">
+						2023–now
+					</div>
+				</div> -->
+
+          <!-- <div class="row">
+					<div class="left">
+						Machine Learning Engineer Intern, Kuaishou, Beijing, China
+					</div>
+					<div class="right">
+						2021–2022
+					</div>
+				</div> -->
+        </div>
+
+        <div class="item appearance">
+          <h1>Appearance</h1>
+
+          <div class="row">
+            <div class="left">
+              <img
+                src="https://github.com/dangtranhuu/images/blob/main/programing/16-20-11-48-162384905795386933.png?raw=true"
+                alt=""
+                srcset=""
+              />
+            </div>
+            <div class="right">
+              <a
+                href="https://caodang.fpt.edu.vn/tin-tuc-poly/can-tho-tin-sinh-vien/du-an-phan-mem-quan-ly-ban-phu-kien-thiet-bi-di-dong-cua-sinh-vien-fpoly-can-tho-lot-mat-xanh-cua-giang-vien.html?zarsrc=30&utm_source=zalo&utm_medium=zalo&utm_campaign=zalo"
+                >The project "Davisy Store Manager" using Java Swing was highly
+                appreciated by FPT lecturers (10/10 mark) and appeared on the
+                school's online newspaper...</a
+              >
+              <a
+                href="https://caodang.fpt.edu.vn/tin-tuc-poly/can-tho-tin-sinh-vien/du-an-phan-mem-quan-ly-ban-phu-kien-thiet-bi-di-dong-cua-sinh-vien-fpoly-can-tho-lot-mat-xanh-cua-giang-vien.html?zarsrc=30&utm_source=zalo&utm_medium=zalo&utm_campaign=zalo"
+                >More</a
+              >
+            </div>
+          </div>
+          <div class="row">
+            <div class="left">
+              <img
+                src="https://github.com/dangtranhuu/images/blob/main/programing/icons8-angular-480.png?raw=true"
+                alt=""
+                srcset=""
+              />
+            </div>
+            <div class="right">
+              <a
+                href="https://caodang.fpt.edu.vn/tin-tuc-poly/can-tho-tin-sinh-vien/nam-sinh-fpt-polytechnic-can-tho-tai-nang-sang-tao-he-thong-hoc-lap-trinh-bo-ich.html?zarsrc=30&utm_source=zalo&utm_medium=zalo&utm_campaign=zalo&gidzl=jGLlJD1wT3os6sbDsc9sFBuQOqp4ONa-g1vb7PrWAsZz73KSosOhFVeUCKYRCYKv-4vlI3HKJon7qtDwCm&fbclid=IwAR1bheYiv-1oFz1hZxqUAt2QNfJglmFDSPQhYhrmnWcay9zcfx3KbL9WnJE"
+                >The project "Frog Quiz" using AngularJS, Firebase was highly
+                appreciated by FPT lecturers (10/10 mark) and appeared on the
+                school's online newspaper...</a
+              >
+              <a
+                href="https://caodang.fpt.edu.vn/tin-tuc-poly/can-tho-tin-sinh-vien/nam-sinh-fpt-polytechnic-can-tho-tai-nang-sang-tao-he-thong-hoc-lap-trinh-bo-ich.html?zarsrc=30&utm_source=zalo&utm_medium=zalo&utm_campaign=zalo&gidzl=jGLlJD1wT3os6sbDsc9sFBuQOqp4ONa-g1vb7PrWAsZz73KSosOhFVeUCKYRCYKv-4vlI3HKJon7qtDwCm&fbclid=IwAR1doILz1Bs9TZQ7lyH3tp-CuCpKiZl-eSZ0UVj3Ryq1m4CY2PtSAWp2VPM"
+                >More</a
+              >
+            </div>
+          </div>
+          <div class="row">
+            <div class="left">
+              <img
+                src="https://github.com/dangtranhuu/images/blob/main/programing/icons8-vue-js-480.png?raw=true"
+                alt=""
+                srcset=""
+              />
+            </div>
+            <div class="right">
+              <a href=""
+                >The project "Angurvad" using VueJS is a ebook learning
+                programing for student IT...</a
+              >
+              <a href="">More</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="left">
+              <img
+                src="https://github.com/dangtranhuu/images/blob/main/programing/icons8-nodejs-240.png?raw=true"
+                alt=""
+                srcset=""
+              />
+            </div>
+            <div class="right">
+              <a href=""
+                >The project "Rainbow Flix" using NodeJS, AngularJS is a
+                watching movie website...</a
+              >
+              <a href="">More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="education title item">
+          <h1>Education</h1>
+          <div class="row">
+            <div class="left">FPT Polytechnic Collect</div>
+            <div class="right">2022-2024</div>
+          </div>
+        </div>
+
+        <div class="projects title">
+          <h1 class="">Projects</h1>
+          <div class="row"></div>
+          <div class="pro">
+            <div class="left">
+              <img src="../assets/images/davitickets.png" alt="" srcset="" />
+            </div>
+            <div class="right">
+              <a href="https://github.com/Theanishtar/DaviTickets">
+                <p>DaviTickets - Website booking tickets cinema</p>
+              </a>
+              <div class="bot">
+                <div class="technical">
+                  <span class="angular">
+                    <img
+                      src="../assets/images/techs/angular-seeklogo.com.svg"
+                      alt=""
+                      srcset=""
+                    />Angular
+                  </span>
+                  <span class="springboot">
+                    <img
+                      src="../assets/images/techs/icons8-spring-boot.svg"
+                      alt=""
+                      srcset=""
+                    />SpringBoot
+                  </span>
+                  <span class="jwt">
+                    <img
+                      src="../assets/images/techs/icons8-jwt.svg"
+                      alt=""
+                      srcset=""
+                    />JWT
+                  </span>
+                  <span class="firebase">
+                    <img
+                      src="../assets/images/techs/icons8-firebase.svg"
+                      alt=""
+                      srcset=""
+                    />FireBase
+                  </span>
+                  <span class="sql-server">
+                    <img
+                      src="../assets/images/techs/icons8-microsoft-sql-server.svg"
+                      alt=""
+                      srcset=""
+                    />SQL Server
+                  </span>
+                </div>
+                <div class="description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse bibendum. Nunc non posuere consectetur, justo erat
+                  semper enim, non hendrerit dui odio id enim.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row"></div>
+          <div class="pro">
+            <div class="left">
+              <img src="../assets/images/rainbow-flix.png" alt="" srcset="" />
+            </div>
+            <div class="right">
+              <a href="https://github.com/Theanishtar/Rainbow-Flix">
+                <p>Website watching movie Rainbow-Flix</p>
+              </a>
+              <div class="bot">
+                <div class="technical">
+                  <span class="nodejs">
+                    <img
+                      src="../assets/images/techs/nodejs-icon-svgrepo-com.svg"
+                      alt=""
+                      srcset=""
+                    />NodeJS
+                  </span>
+                  <span class="expressjs">
+                    <img
+                      src="../assets/images/techs/express-svgrepo-com.svg"
+                      alt=""
+                      srcset=""
+                    />ExpressJS
+                  </span>
+                  <span class="jwt">
+                    <img
+                      src="../assets/images/techs/icons8-jwt.svg"
+                      alt=""
+                      srcset=""
+                    />JWT
+                  </span>
+                  <!-- <span class="scss">
+									<img src="../assets/images/techs/" alt="" srcset="">
+									SCSS
+								</span> -->
+                </div>
+                <div class="description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse bibendum. Nunc non posuere consectetur, justo erat
+                  semper enim, non hendrerit dui odio id enim.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pro">
+            <div class="left">
+              <img src="../assets/images/frogcyber.png" alt="" srcset="" />
+            </div>
+            <div class="right">
+              <a href="https://github.com/Theanishtar/Rainbow-Flix">
+                <p>Website learning programing - Frog Cyber</p>
+              </a>
+              <div class="bot">
+                <div class="technical">
+                  <span class="gitcus">
+                    <img
+                      src="../assets/images/techs/icons8-github.svg"
+                      alt=""
+                      srcset=""
+                    />GitCus
+                  </span>
+                  <span class="vue">
+                    <img
+                      src="../assets/images/techs/vuejs-seeklogo.com.svg"
+                      alt=""
+                      srcset=""
+                    />
+                    Vue
+                  </span>
+                  <span class="vue"
+                    ><img
+                      src="../assets/images/techs/nuxt-seeklogo.com.svg"
+                      alt=""
+                      srcset=""
+                    />Nuxt</span
+                  >
+                </div>
+                <div class="description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse bibendum. Nunc non posuere consectetur, justo erat
+                  semper enim, non hendrerit dui odio id enim.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pro">
+            <div class="left">
+              <img src="../assets/images/frog-quiz.png" alt="" srcset="" />
+            </div>
+            <div class="right">
+              <a href="https://github.com/Theanishtar/frog-quiz">
+                <p>Frog Quiz - Website quiz online</p>
+              </a>
+              <div class="bot">
+                <div class="technical">
+                  <span class="angular">
+                    <img
+                      src="../assets/images/techs/icons8-angularjs.svg"
+                      alt=""
+                      srcset=""
+                    />AngularJS
+                  </span>
+                  <span class="firebase">
+                    <img
+                      src="../assets/images/techs/icons8-firebase.svg"
+                      alt=""
+                      srcset=""
+                    />FireBase
+                  </span>
+                  <span class="gitcus">
+                    <img
+                      src="../assets/images/techs/icons8-github.svg"
+                      alt=""
+                      srcset=""
+                    />GitCus
+                  </span>
+                </div>
+                <div class="description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse bibendum. Nunc non posuere consectetur, justo erat
+                  semper enim, non hendrerit dui odio id enim.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="miscellaneous title item">
+          <h1>Miscellaneous</h1>
+          <ul>
+            <li class="showtoTop delay-02">
+              🚀 My projects mainly focus on software running on Windows and
+              website-apps
+            </li>
+            <li class="showtoTop delay-04">
+              🧐 My Skills: Java, Spring Boot, Spring MVC, JavaScript, NodeJS,
+              SQL Server, MySQL, MongoDB, Firebase
+            </li>
+            <li class="showtoTop delay-06">
+              🎃 TheanIshtar is inspired by the Egyptian language
+            </li>
+            <li class="showtoTop delay-08">
+              🖥 I have creativity and always exploring new things
+            </li>
+            <li class="showtoTop delay-1">
+              🛠 Like to contribute to open-source machine learning and frontend
+              projects in spare time
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer>© Davis 2023 · A FrogDev at @FrogSageLand</footer>
+
+    <!-- ANIMATION SCROLL -->
+    <!-- <script>
+		let items = document.querySelectorAll('.item');
+
+		document.addEventListener('scroll', (event) => {
+			items.forEach(item => {
+				if (item.offsetTop - window.scrollY < 350) {
+					item.classList.add('active');
+				} else {
+					item.classList.remove('active');
+				}
+			})
+		})
+	</script> -->
+  </div>
+</template>
+<style>
+@import url("../assets/css/global.css");
+@import url("https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css");
+@import url("../assets/css/animation.css");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+@import url("../assets/css/projects.css");
+</style>
+<script>
+export default {
+  name: "MyCv",
+  mounted() {
+    this.onload();
+  },
+  methods: {
+    changesIcon() {
+      document.body.classList.toggle("dark-mode");
+      let x = document.getElementById("mode");
+      x.classList.toggle("bx-sun");
+      let darkMode = document.getElementsByClassName("dark-mode");
+      //
+      if (darkMode.length == 0) {
+        // alert("dark mode -> light mode")
+        localStorage.setItem("modeByThean", "light");
+      } else {
+        // alert("light mode -> dark mode")
+        localStorage.setItem("modeByThean", "dark");
+      }
+    },
+    scrollOnTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    },
+    onload() {
+      let mode = localStorage.getItem("modeByThean");
+      if (mode == "dark") {
+        let darkMode = document.getElementsByClassName("dark-mode");
+
+        var element = document.body;
+        if (darkMode.length == 0) {
+          element.classList.toggle("dark-mode");
+
+          //thay đổi icon
+          let icon = document.getElementsByClassName("sun-moon");
+          console.log(icon);
+          icon[0].classList.toggle("bx-sun");
+          icon[1].classList.toggle("bx-sun");
+        } else {
+          element.classList.toggle("dark-mode");
+        }
+      }
+    },
+  },
+};
+</script>

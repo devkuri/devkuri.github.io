@@ -1,0 +1,685 @@
+:root {
+    --primary-color: #0074e4;
+    --primary-color-dark: #d41d45;
+    --secondary-color: #ff6600;
+    --background-color: #f0f0f0;
+    --background-color-dark: #374151;
+    --text-color: #1F2937;
+    --text-color-dark: #e5e7eb;
+    --contact-bc: #dbdfe7;
+    --contact-bc-dark: #4A5363;
+}
+
+* {
+    letter-spacing: 0.3px;
+}
+
+.body {
+    background-color: var(--background-color);
+    font-family: "Computer Modern Sans", sans-serif;
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: "Computer Modern Sans", sans-serif;
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+.dark-mode {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+}
+
+.dark-mode .body {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+}
+
+a {
+    color: #0b181b;
+    text-decoration: none;
+}
+
+.dark-mode a {
+    color: #41bfe6;
+}
+
+header {
+    align-items: center;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: space-between;
+    line-height: 24px;
+    padding: 0px 20px;
+}
+
+.dark-mode header {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+}
+
+header .logo {
+    /* color: #ffffff; */
+    display: inline;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
+}
+
+
+header .menu ul {
+    display: flex;
+}
+
+header .menu ul li {
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+header .menu ul li a {
+    color: var(--text-color);
+    line-height: 24px;
+    margin: 0px 0px 0px 4px;
+    text-decoration: none;
+}
+
+.dark-mode header .menu ul li a {
+    color: var(--text-color-dark);
+}
+
+
+.container {
+    padding: 0px 350px;
+    color: var(--text-color);
+    flex-basis: 0%;
+    line-height: 24px;
+    margin: 0px 0px 24px;
+}
+
+#desc {
+    margin-top: -40px;
+    color: #2b2c2fa1;
+}
+
+.dark-mode .container {
+    color: var(--text-color-dark);
+}
+
+.container .head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .head .left {
+    color: var(--text-color);
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-size: 17.5px;
+    font-weight: 600;
+    line-height: 50.625px;
+    margin: 16px 0px;
+}
+
+.dark-mode .container .head .left {
+    color: var(--text-color-dark);
+}
+
+.container .head .left h1 {
+    font-size: 40.5px;
+}
+
+
+.container .head .left .contact .wrap {
+    display: flex;
+    margin-bottom: 3px;
+}
+
+.container .head .left .contact button {
+    align-items: center;
+    /* background-color: #4A5363; */
+    background-color: var(--contact-bc);
+    border-radius: 4px;
+    color: var(--contact-bc-dark);
+    display: flex;
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-size: 18px;
+    line-height: 20px;
+    margin: 0px 5px 5px 0px;
+    padding: 0px 12px;
+    border: none;
+    height: 30px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.dark-mode .container .head .left .contact button {
+    background-color: var(--contact-bc-dark);
+    color: var(--contact-bc);
+}
+
+.container .head .left .contact button a {
+    color: var(--text-color);
+}
+
+.dark-mode .container .head .left .contact button a {
+    color: var(--text-color-dark);
+}
+
+.container .head .left .about p {
+    color: var(--text-color);
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-size: 15px;
+    line-height: 27.9px;
+    margin: 18px 0px;
+    font-weight: 400;
+}
+
+.dark-mode .container .head .left .about p {
+    color: var(--text-color-dark);
+}
+
+.container .head .right {
+    border-radius: 6px;
+    box-shadow: #000000 0px 0px 0px 0px;
+    color: var(--text-color);
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0px 0px 4px;
+    padding-top: 50px;
+}
+
+.dark-mode .container .head .right {
+    color: var(--text-color-dark);
+}
+
+.container .head .right img {
+    width: 100px;
+    border-radius: 4px;
+    color: var(--text-color);
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.dark-mode .container .head .right img {
+    color: var(--text-color-dark);
+}
+
+.education,
+.publications,
+.miscellaneous,
+.about,
+.projects {
+    padding-bottom: 90px;
+}
+
+.projects .right a p {
+    color: var(--text-color);
+}
+
+.dark-mode .projects .right a p {
+    color: var(--text-color-dark);
+}
+
+.miscellaneous {
+    margin-top: 90px;
+}
+
+.miscellaneous ul li {
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 0;
+    line-height: 30.75px;
+    /* font-family: 'Rubik', sans-serif;
+	font-family: 'Ubuntu', sans-serif; */
+}
+
+.dark-mode .miscellaneous ul li {
+    color: var(--text-color-dark);
+}
+
+.education h1,
+.publications h1,
+.miscellaneous h1,
+.experience {
+    /* font-family: 'Rubik', sans-serif;
+	font-family: 'Ubuntu', sans-serif; */
+    font-weight: 550;
+}
+
+.title h1 {
+    font-size: 31.5px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: solid 0.5px rgba(203, 203, 203, 0.511);
+    padding: 10px 0px;
+    /* font-family: 'Rubik', sans-serif;
+	font-family: 'Ubuntu', sans-serif; */
+}
+
+.publications .row .left img {
+    width: 200px;
+}
+
+.publications .right {
+    padding-left: 30px;
+}
+
+.publications .right .title {
+    color: var(--contact-bc);
+    display: inline;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24.75px;
+}
+
+.dar-mode .publications .right .title {
+    color: var(--contact-bc-dark);
+}
+
+
+.projects .main {
+    margin-top: 50px;
+}
+
+footer {
+    text-align: center;
+    color: var(--contact-bc-dark);
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-size: 15px;
+    line-height: 27.9px;
+    margin: 18px 0px;
+    font-weight: 400;
+    margin-top: 50px;
+}
+
+.dark-mode footer {
+    color: var(--contact-bc);
+}
+
+.box .left .bot {
+    color: var(--contact-bc);
+    font-size: 16px;
+    line-height: 20px;
+    margin: 4px 0px 0px;
+    font-weight: 0;
+}
+
+.dark-mode .box .left .bot {
+    color: var(--contact-bc-dark);
+}
+
+
+.box {
+    margin-right: 20px;
+    border: solid 0.3px rgba(173, 173, 173, 0.389);
+    width: 50%;
+    height: 80px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.wrap button:hover {
+    box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+/* .wrap button:hover i {
+	color: #41bfe6;
+} */
+
+#leetcode,
+#hackerrank {
+    width: 18px;
+    fill: var(--contact-bc-dark)
+}
+
+.dark-mode #leetcode,
+.dark-mode #hackerrank {
+    fill: var(--contact-bc)
+}
+
+.wrap button:hover #facebook {
+    color: #007bff;
+}
+
+.wrap button:hover #youtube {
+    color: #ff4e4e;
+}
+
+.wrap button:hover #linkedin {
+    color: #0073ff;
+}
+
+.wrap button:hover #github {
+    color: #9a56ff;
+}
+
+.wrap button:hover #leetcode {
+    fill: #bd9400;
+}
+
+.wrap button:hover #hackerrank {
+    fill: #0ac316;
+}
+
+.wrap button:hover #tiktok {
+    color: #39373b;
+}
+
+.wrap button:hover #twitter {
+    color: #0084ff;
+}
+
+.box .left .top {
+    font-size: 18px;
+    margin-bottom: 15px;
+    /* font-family: 'Nunito', sans-serif; */
+    font-weight: 500;
+    display: inline-flex;
+}
+
+.box .left .top .tech {
+    margin-left: 20px;
+}
+
+.box .left .top .tech i {
+    font-weight: 0;
+    font-size: 18px;
+}
+
+h3 {
+    /* font-family: 'Ubuntu', sans-serif; */
+}
+
+.box .left .bot {
+    /* font-family: 'Nunito', sans-serif; */
+    opacity: 0.6;
+}
+
+.box .right {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+}
+
+.box .right i {
+    font-size: 35px;
+    opacity: 0.6;
+
+}
+
+.box .left {
+    width: 85%;
+}
+
+.box:hover {
+    cursor: pointer;
+    background-color: #6b72801d;
+}
+
+h3 {
+    font-family: "Computer Modern Sans", sans-serif;
+}
+
+.box {
+    margin-bottom: 20px;
+}
+
+.head .left span {
+    font-size: 15px;
+    font-weight: 0;
+    /* font-family: 'Comfortaa', cursive; */
+    margin-left: 10px
+}
+
+#avatar {
+    width: 150px;
+}
+
+.box {
+    height: auto;
+}
+
+
+/* Mobile */
+@media (max-width: 46.1875em) {
+
+    .container {
+        padding: 0px 15px;
+    }
+
+    .container .head .left .contact {
+        display: block;
+    }
+
+    .publications .right {
+        padding-left: 0px;
+    }
+
+    .experience .left,
+    .education .left {
+        width: 70%;
+    }
+
+    .box {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+
+    #avatar {
+        display: none;
+        margin-top: -8px;
+        width: 150px;
+    }
+
+    #avt {
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+    }
+
+    #uname {
+        text-align: center;
+    }
+
+    #subname {
+        /* color: #404955; */
+        color: #CBCFD4;
+        color: #e5e7eb;
+        display: inline;
+        font-weight: 600;
+        line-height: 24px;
+        margin: 0px 0px 0px 12px;
+        font-size: 15px;
+        margin-left: -2px;
+    }
+
+    #desc {
+        text-align: center;
+        font-family: Computer Modern Sans;
+        font-weight: 700;
+        line-height: 24.8px;
+        margin: 0px 0px 12px;
+        margin-top: -20px;
+        margin-bottom: 20px;
+    }
+
+    .dark-mode #desc {
+        color: #e5e7eba1;
+    }
+
+    .wrap {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.boxs a {
+    color: white;
+}
+
+.box .head {
+    display: flex;
+}
+
+
+.undeveloped {
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 200px 0px;
+}
+
+.appearance,
+.experience {
+    margin-bottom: 100px;
+}
+
+.experience .row {
+    margin-bottom: 30px;
+}
+
+.appearance .right {
+    color: var(--text-color);
+}
+
+.dark-mode .appearance .right {
+    color: var(--text-color-dark);
+}
+
+.dark-mode .appearance .right a {
+    color: var(--text-color-dark);
+}
+
+.experience .bot {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.3px;
+    font-weight: 400;
+    padding-left: 0px;
+}
+
+.appearance img {
+    width: 100px;
+    padding-right: 50px;
+}
+
+/* PC */
+@media (min-width: 64em) {
+    #avt {
+        display: none;
+    }
+
+    #avatar {
+        padding-right: 30px;
+        margin-top: -30px;
+        width: 200px;
+    }
+
+    #desc {
+        margin-top: -40px;
+    }
+
+    .dark-mode #desc {
+        margin-top: -40px;
+        color: #e5e7eba1;
+    }
+
+    .container .boxs {
+        display: flex;
+    }
+
+    .contact {
+        display: block;
+    }
+
+    .contact .wrap {
+        display: block;
+    }
+}
+
+
+/* SCROLL */
+#scroll {
+    position: fixed;
+    bottom: 20px;
+    /* Điều chỉnh khoảng cách từ dưới cùng của trang */
+    right: 20px;
+    /* Điều chỉnh khoảng cách từ phải cùng của trang */
+    z-index: 999;
+    /* Điều chỉnh z-index nếu cần */
+    opacity: 0.5;
+}
+
+#scroll:hover {
+    opacity: 1;
+}
+
+#scroll #scrollToTopBtn {
+    width: 45px;
+    height: 45px;
+    /* background: linear-gradient(#44ea76, #39fad7); */
+    background: linear-gradient(#00B0F0, #39fad7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    border: none;
+}
+
+#scroll .arrow path {
+    fill: #404955;
+}
+
+#scroll .text {
+    font-size: 0.7em;
+    width: 100px;
+    position: absolute;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: -18px;
+    opacity: 0;
+    transition-duration: .7s;
+}
+
+#scroll #scrollToTopBtn:hover .text {
+    opacity: 1;
+    transition-duration: .7s;
+    padding-top: 10px;
+}
+
+#scroll #scrollToTopBtn:hover .arrow {
+    animation: slide-in-bottom .7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-bottom {
+    0% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#scrollToTopBtn {
+    display: none;
+}
